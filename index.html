@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="assets/logo.webp">
+<title>PROLOGUE – The Reading Club of LBSITW</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="#home" class="logo"><img src="assets/logo.webp" alt="">PROLOGUE</a>
+  <button id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+  <ul id="menu">
+    <li><a href="#about">About</a></li><li><a href="#why">Why join</a></li><li><a href="#activities">Activities</a></li>
+    <li><a href="#events">Events</a></li><li><a href="#join">Join</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+<!-- HOME -->
+<section id="home" style="padding-top:20px">
+  <h1 class="grad" aria-label="Prologue">Prologue</h1>
+  <div class="portrait" aria-hidden="true">
+    <div id="magnet"><div class="book"><span></span><b>PROLOGUE</b><span>Every story starts here</span></div></div>
+  </div>
+  <div class="hero-bottom lead">
+    <p>the reading club of LBSITW, for people who can't put a book down</p>
+    <a class="pill" href="#join">Join the club</a>
+  </div>
+</section>
+
+<div class="marq" aria-hidden="true">
+  <div class="row" id="r1"></div><div class="row" id="r2"></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="wrap">
+    <h2 class="big grad">About</h2>
+    <p class="txt" id="aboutTxt">PROLOGUE is the reading club of LBSITW. We meet to share books, argue about endings, and turn quiet reading into conversation. Whether you read one novel a year or five a month, there's a seat for you.</p>
+    <div class="three">
+      <div><h3>Vision</h3><p>A campus where reading is a shared habit, not a solo chore.</p></div>
+      <div><h3>Purpose</h3><p>Build a friendly space for students to discover books, discuss ideas and grow as readers and speakers.</p></div>
+      <div><h3>Open to all</h3><p>Every branch, every year, every genre. Fiction, poetry, comics, tech and non-fiction all count.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY JOIN -->
+<section id="why" class="light">
+  <div class="wrap">
+    <h2 class="big">Why join</h2>
+    <div class="benefit"><div class="n">1</div><div><h3>Find your next book</h3><p>Member-curated reading lists and a shared shelf so you never run out of good picks.</p></div></div>
+    <div class="benefit"><div class="n">2</div><div><h3>Speak with confidence</h3><p>Discussions, debates and open mics build communication skills you'll use in interviews.</p></div></div>
+    <div class="benefit"><div class="n">3</div><div><h3>Meet your people</h3><p>Friends across branches and batches who love the same stories you do.</p></div></div>
+    <div class="benefit"><div class="n">4</div><div><h3>Take part and lead</h3><p>Host a session, organise an event or write for the club. Certificates for active members.</p></div></div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<div class="stackwrap" id="activities">
+  <section style="padding-bottom:20px"><div class="wrap"><h2 class="big grad" style="margin-bottom:0">Activities</h2></div></section>
+  <div class="wrap" style="padding:0 var(--pad) 80px">
+    <div class="slot"><article class="acard"><div><span class="tag">Weekly</span><h3>Book Circles</h3><p>Small groups read one title together and meet to talk through characters, themes and favourite lines.</p></div><div class="n grad">01</div></article></div>
+    <div class="slot"><article class="acard"><div><span class="tag">Monthly</span><h3>Open Mic &amp; Read-Aloud</h3><p>Read a page you love, perform a poem or share your own writing in front of a supportive crowd.</p></div><div class="n grad">02</div></article></div>
+    <div class="slot"><article class="acard"><div><span class="tag">Seasonal</span><h3>Quizzes, Swaps &amp; Challenges</h3><p>Literary quizzes, book swaps and the yearly reading challenge with a leaderboard for members.</p></div><div class="n grad">03</div></article></div>
+  </div>
+</div>
+
+<!-- EVENTS -->
+<section id="events" style="padding-top:40px">
+  <div class="wrap">
+    <h2 class="big grad">Events</h2>
+    <div class="filters" role="group" aria-label="Filter events">
+      <button class="ghost on" data-f="all">All</button><button class="ghost" data-f="up">Upcoming</button><button class="ghost" data-f="past">Past</button>
+    </div>
+    <div id="eventList"></div>
+  </div>
+</section>
+
+<!-- REGISTRATION -->
+<section id="join">
+  <div class="wrap">
+    <h2 class="big grad">Join</h2>
+    <form id="regForm" novalidate>
+      <div class="two">
+        <div class="f"><label for="name">Full name</label><input id="name" name="name" autocomplete="name"><div class="msg"></div></div>
+        <div class="f"><label for="email">College email</label><input id="email" name="email" type="email" autocomplete="email"><div class="msg"></div></div>
+      </div>
+      <div class="two">
+        <div class="f"><label for="phone">Phone (10 digits)</label><input id="phone" name="phone" inputmode="numeric" autocomplete="tel"><div class="msg"></div></div>
+        <div class="f"><label for="admno">Admission number</label><input id="admno" name="admno"><div class="msg"></div></div>
+      </div>
+      <div class="two">
+        <div class="f"><label for="branch">Branch</label>
+          <select id="branch" name="branch"><option value="">Select branch</option><option>Computer Science</option><option>Electronics</option><option>Electrical</option><option>Mechanical</option><option>Civil</option><option>Other</option></select><div class="msg"></div></div>
+        <div class="f"><label for="year">Year</label>
+          <select id="year" name="year"><option value="">Select year</option><option>1st</option><option>2nd</option><option>3rd</option><option>4th</option></select><div class="msg"></div></div>
+      </div>
+      <div class="f"><label for="why">Why do you want to join? (min 20 characters)</label><textarea id="why" name="why" rows="4"></textarea><div class="msg"></div></div>
+      <button class="pill" type="submit">Apply for membership</button>
+    </form>
+    <div id="ok" role="status" tabindex="-1"><h3>You're on the list!</h3><p id="okTxt"></p></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <h2 class="big grad">Gallery</h2>
+    <p style="text-align:center;color:var(--mute);margin:-30px 0 30px">Sample tiles. Swap in real club photos by adding an image URL to each item in the script.</p>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2 class="big grad">Contact</h2>
+    <p>Questions about joining or hosting a session? Write to us.</p>
+    <div class="links">
+      <a class="ghost" href="mailto:prologue@lbsitw.ac.in">prologue@lbsitw.ac.in</a>
+      <a class="ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a class="ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="ghost" href="https://chat.whatsapp.com/" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <p style="color:var(--mute)">LBS Institute of Technology for Women, Poojappura, Thiruvananthapuram</p>
+  </div>
+</section>
+</main>
+<footer>© 2026 PROLOGUE, The Reading Club of LBSITW</footer>
+
+<button class="float-logo" id="floatLogo" aria-label="Back to top"><img src="assets/logo.webp" alt="PROLOGUE logo"></button>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo preview"><div id="lbBox"><button class="ghost" id="lbClose">Close</button><span id="lbCap"></span></div></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
